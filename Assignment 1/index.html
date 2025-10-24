@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Prithvee Singh Yadav - Portfolio</title>
+    <meta charset="utf-8" />
+    <title>Prithvee Singh Yadav - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="top">
 
-  <div>
-    <h1>Prithvee Singh Yadav</h1>
-    <hr>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <header>
+        <div class="container">
+            <h1>Prithvee Singh Yadav</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h2>Welcome to My Portfolio</h2>
-    <p> I am <b>Prithvee Singh Yadav</b>, a computer science student in K.R. Mangalam University with a strong passion for web development. This website showcases my journey, projects, and the skills I have developed along the way</p>
+    <main class="container">
+        <section id="welcome" class="section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am <b>Prithvee Singh Yadav</b>, a computer science student at K.R. Mangalam University with a strong passion for web development. This website showcases my journey, projects, and the skills I have developed along the way.</p>
+        </section>
 
-    <h2 id="about">About Me</h2>
+        <hr>
 
-    <p>
-      <img src="./prathvi pp.jpg"
-           alt="Avatar" width="120" height="120" />
-    </p>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="profile-pic-container">
+                <img src="./prathvi pp.jpg" alt="Avatar" class="profile-pic" />
+            </div>
+            <p>I am passionate about learning web development and building creative projects. My goal is to continually expand my knowledge and skills in this dynamic field, tackling new challenges and transforming innovative concepts into functional and user-friendly digital experiences.</p>
+        </section>
 
-    <p>I am passionate about learning web development and building creative projects. My goal is to continually expand my knowledge and skills in this dynamic field, tackling new challenges and transforming innovative concepts into functional and user-friendly digital experiences..</p>
+        <hr>
 
-    <h2 id="projects">My Projects</h2>
-    <ul>
-      <li><b>Portfolio Website:</b> A personal one-page website to showcase work, skills, and contact details.</li>
-      <li><b>Student Corner:</b> A simple blog and tool hub for notes, Markdown, HTML, and CSS.</li>
-      <li><b>Calculator:</b> A super handy digital tools that quickly and accurately handle all sorts of math, making tricky computations way simpler with python for practicing and Grasping the underlying logic  </li>
-      <li><b>User Forms:</b> A form webpage with fields like name, email, and message for practicing basic handling.</li>
-    </ul>
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A personal one-page website to showcase work, skills, and contact details.</p>
+            </div>
+            <div class="project-card">
+                <h3>Student Corner</h3>
+                <p>A simple blog and tool hub for notes, Markdown, HTML, and CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Python Calculator</h3>
+                <p>A tool to handle math computations, built to practice and grasp the underlying logic of Python.</p>
+            </div>
+             <div class="project-card">
+                <h3>User Forms</h3>
+                <p>A form webpage with fields like name, email, and message for practicing basic handling.</p>
+            </div>
+        </section>
 
-    <h2>Technical Skills</h2>
+        <hr>
 
-<table border="5">
-  <thead>                          
-    <tr>
-      <th>Skill</th>
-      <th>Level</th>
-      <th>Notes / Projects Used In</th>
-    </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>HTML</td>
-        <td>
-          <span>Intermediate</span>
-        </td>
-         <td>Portfolio Website</td>
-        </tr>
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Notes / Projects Used In</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                        <td>Portfolio Website</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Beginner</td>
+                        <td>Used for basic scripting and problem-solving exercises</td>
+                    </tr>
+                    <tr>
+                        <td>Git & GitHub</td>
+                        <td>Beginner</td>
+                        <td>Used for version control on all my projects</td>
+                    </tr>
+                    <tr>
+                        <td>Problem-Solving</td>
+                        <td>Proficient</td>
+                        <td>Applied in all academic and personal projects.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-         <tr>
-          <td>Python</td>
-          <td>
-            <span>Beginner</span>
-          </td>
-            <td>Used for basic scripting and problem-solving exercises</td>
-            </tr>
-                      
-              <tr>
-                <td>Git & GitHub</td>
-                <td>
-                  <span>Beginner</span>
-                </td>
-                <td>Used for version control on all my projects</td>
-                </tr>
-                   
-                  <tr>
-                    <td>Problem-Solving</td>
-                    <td>
-                      <span>Proficient</span>
-                    </td>
-                    <td>Applied in all academic and personal projects. </td>
-                  </tr>
-                    </tbody>
-                    </table>
+        <hr>
 
-    <h2 id="contact">Contact Me</h2>
-    <a href="https://www.linkedin.com/in/prithvee-singh-yadav-9a1270373/" target="_blank"><img src="./linkdin.jpg" alt="linkdin"></a>
-    <a href="https://github.com/prithvee07-gitlur" target="_blank"><img src=""</a>
-    <form>
-      <p>
-        <label for="name">Name:</label><br />
-        <input id="name" name="name" type="text" placeholder="Enter your name" />
-      </p>
-      <p>
-        <label for="email">Email:</label><br />
-        <input id="email" name="email" type="email" placeholder="Enter your email" />
-      </p>
-      <p>
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" cols="40" placeholder="Enter your message"></textarea>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
-  </div>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/prithvee-singh-yadav-9a1270373/" target="_blank">
+                    <img src="./icons8-linkedin-100.png" alt="LinkedIn Profile" class="social-icon">
+                </a>
+                <a href="https://github.com/prithvee07-gitlur" target="_blank">
+                     <img src="./icons8-github-logo-100.png" alt="GitHub Profile" class="social-icon">
+                </a>
+            </div>
+            <form action="#" method="post">
+                <div class="form-grid">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <a href="#top" class="back-to-top-btn">↑ Back to Top</a>
 
 </body>
 </html>
