@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+#container {
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e40af; 
+    color: #fff;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+#section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 70px;
+    background-color: #f6f6f6;
+}
+
+.hero-text {
+    max-width: 60%;
+}
+
+.hero-text .intro {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin: 18px 0;
+    font-weight: 700;
+
+    background: linear-gradient(
+        120deg,
+        #1824d3,
+        #facc15,
+        #ec4899,
+        #22c55e,
+        #60a5fa,
+        #c47428
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: headingGradient 6s ease-in-out infinite;
+}
+@keyframes headingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.hero-text .sub-title {
+    font-size: 18px;
+}
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.avatar-circle img {
+    width: 70%;
+    height: auto;
+}
+.section-padding {
+    padding: 60px 70px;
+    background-color: #f6f6f6;
+}
+
+.section-padding:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.section-padding h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section-padding p {
+    line-height: 1.5;
+}
+
+/* SKILLS */
+.skills-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #1837a0;
+    color: #fff;
+    padding: 24px 10px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.35);
+    
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+.skill-card h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 18px;
+}
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.9);
+    border-color: #ff00ff; 
+}
+
+
+.skill-card h3 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 18px;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.project-card {
+    max-width: 750px;
+    margin-inline: auto;           
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+                background-size: 350px 750px;
+    animation-name: fx;
+    animation-iteration-count:infinite;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+@keyframes fx{
+form   0%{
+            background-image: url(https://nationaleventpros.com/wp-content/uploads/2017/08/Depositphotos_6943131_l-2015-1600x1038.jpg);
+            }
+            50%{
+              background-image: url(https://asset.gecdesigns.com/img/wallpapers/yellow-circle-dark-theme-iphone-wallpaper-hd-sr17092415-cover.webp);
+            }
+            100%{
+              background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOL_2zQ9H6YuHx7hp0tzEIjDQqAsZwQlQN-A&s);
+        }
+    }
+
+
+.project-card h3 {
+    font-size: 32px;
+    margin: 16px 0 8px 0;
+    color: #f3f3f3;
+}
+.project-card p {
+    font-size: 18px;
+    padding: 0 12px;
+    color: #f3f3f3;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+.project-card:hover img {
+    transform: scale(1.08);
+}
+
+
+/* CONTACT */
+.contact-section {
+    background-color: #f6f6f6;
+}
+
+.contact-card {
+    max-width: 450px;
+    margin: 30px auto 0;
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.contact-card label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    border: 2px solid #60a5fa;
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    border-color: #1d4ed8;
+}
+
+.contact-card button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #1837a0;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1837a0;
+    color: #fff;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 14px;
+}
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: #1837a0;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    #section1 {
+        padding: 50px 30px;
+    }
+
+    .section-padding {
+        padding: 40px 30px;
+    }
+
+    .hero-text .intro {
+        font-size: 42px;
+    }
+
+    .hero-text h1 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 400px) {
+    #section1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text .intro {
+        font-size: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        color: #facc15;
+    }
+
+    .section-padding {
+        padding: 30px 20px;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        font-size: 16px;
+    }
+
+    .back-to-top {
+        right: 10px;
+        bottom: 20px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
